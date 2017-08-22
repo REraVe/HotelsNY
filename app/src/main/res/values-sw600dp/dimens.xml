@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallText">20sp</dimen>
+    <dimen name="largeText">26sp</dimen>
+
+    <dimen name="smallTextDetails">26sp</dimen>
+    <dimen name="largeTextDetails">40sp</dimen>
+
+    <dimen name="hotelImageHeight">330dp</dimen>
+    <dimen name="itemImageWidth">130dp</dimen>
+    <dimen name="itemImageHeight">100dp</dimen>
+    <dimen name="backButtonSize">60dp</dimen>
+
+    <dimen name="smallPadding">3dp</dimen>
+    <dimen name="mediumPadding">6dp</dimen>
+    <dimen name="largePadding">10dp</dimen>
+    <dimen name="hugePadding">22dp</dimen>
+    <dimen name="topPadding">33dp</dimen>
+
+    <dimen name="normalMargin">24dp</dimen>
+
+    <dimen name="mainImageHeight">360dp</dimen>
+    <dimen name="mainPadding">33dp</dimen>
+    <dimen name="mainTextSize">50sp</dimen>
+    <dimen name="mainButtonTextSize">23sp</dimen>
+</resources>

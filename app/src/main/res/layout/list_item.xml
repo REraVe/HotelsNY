@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/largePadding"
+    android:paddingEnd="@dimen/largePadding"
+    android:paddingTop="@dimen/smallPadding">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvHotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/mediumPadding"
+        app:cardCornerRadius="@dimen/mediumPadding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/largePadding">
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="@dimen/itemImageWidth"
+                android:layout_height="@dimen/itemImageHeight"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:padding="@dimen/mediumPadding"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ivPhoto"
+                android:padding="@dimen/mediumPadding">
+
+                <RatingBar
+                    android:id="@+id/rbStars"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:numStars="5"/>
+
+                <TextView
+                    android:id="@+id/tvSuitesQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="5"
+                    android:textSize="@dimen/smallText" />
+
+                <TextView
+                    android:id="@+id/tvSuitesQuantityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@id/tvSuitesQuantity"
+                    android:layout_marginEnd="@dimen/smallPadding"
+                    android:text="@string/freely"
+                    android:textSize="@dimen/smallText" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbStars"
+                    android:paddingTop="@dimen/smallPadding"
+                    android:text="Name"
+                    android:textSize="@dimen/largeText" />
+
+                <TextView
+                    android:id="@+id/tvAddressLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName"
+                    android:paddingTop="@dimen/smallPadding"
+                    android:text="@string/address"
+                    android:textSize="@dimen/smallText" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName"
+                    android:layout_toEndOf="@id/tvAddressLabel"
+                    android:layout_marginStart="@dimen/smallPadding"
+                    android:paddingTop="@dimen/smallPadding"
+                    android:text="Address"
+                    android:textSize="@dimen/smallText" />
+
+                <TextView
+                    android:id="@+id/tvDistanceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAddress"
+                    android:paddingTop="@dimen/smallPadding"
+                    android:text="@string/toCenter"
+                    android:textSize="@dimen/smallText" />
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAddress"
+                    android:layout_toEndOf="@id/tvDistanceLabel"
+                    android:layout_marginStart="@dimen/smallPadding"
+                    android:paddingTop="@dimen/smallPadding"
+                    android:text="100 км"
+                    android:textSize="@dimen/smallText" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

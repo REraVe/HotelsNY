@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.extremekod.hotelsny.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainImageHeight"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/pic_ny" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvHotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPhoto"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:paddingTop="@dimen/mainPadding"
+        android:paddingBottom="@dimen/mainPadding"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/mainTextSize" />
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnViewHotels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:onClick="onClick"
+            android:padding="@dimen/mainPadding"
+            android:text="@string/viewHotels"
+            android:textSize="@dimen/mainButtonTextSize"/>
+
+    </FrameLayout>
+
+</LinearLayout>

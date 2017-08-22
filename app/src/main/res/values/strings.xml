@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Отели Нью-Йорка</string>
+
+    <string name="viewHotels">Выбрать отель</string>
+
+    <string name="sortBy">Сортировать по</string>
+    <string name="sortByDistance">Расстоянию до центра города</string>
+    <string name="sortBySuitesAvailability">Свободным номерам</string>
+
+    <string name="hotelName">Название отеля</string>
+    <string name="address">Адрес:</string>
+    <string name="toCenter">До центра:</string>
+    <string name="toCenterDetails">Расстояние до центра:</string>
+    <string name="freely">Свободно номеров:</string>
+    <string name="freelyDetails">Свободные номера:</string>
+</resources>
